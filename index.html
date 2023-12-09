@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confession</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    function askToShare() {
+      var response = confirm("Hey Feryl, I have something to tell you. Do you want me to share it with you?");
+      if (response == true) {
+        askIfSure();
+      }
+    }
+
+    function askIfSure() {
+      var sureResponse = confirm("Are you sure?");
+      if (sureResponse == true) {
+        displayConfession();
+      }
+    }
+
+    function displayConfession() {
+      alert("Hey Feryl, I just want to tell you how much I really like you, and I wanted to express this feeling using this code. I'm too shy to tell you in person or through a regular message, but yeah, I really admire you. ❄️");
+    }
+  </script>
+
+  <button onclick="askToShare()">Confess</button>
+
+</body>
+</html>
